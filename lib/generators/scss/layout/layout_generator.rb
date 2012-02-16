@@ -7,7 +7,7 @@ module Scss
 
       def create_layout
         template 'layout.html.erb', "app/views/layouts/application.html.erb"
-        copy_file '#{file_name}/stylesheet.css', "public/stylesheets/#{file_name}.css"
+        copy_file '#{file_name}.css', "public/stylesheets/#{file_name}.css"
         copy_file 'layout_helper.rb', 'app/helpers/layout_helper.rb'
       end
 
