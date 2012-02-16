@@ -6,8 +6,8 @@ module Scss
       argument :layout_name, :type => :string, :default => 'application', :banner => 'layout_name'
 
       def create_layout
-        template 'layout.html.erb', "app/views/layouts/#{file_name}.html.erb"
-        copy_file 'stylesheet.css', "public/stylesheets/#{file_name}.css"
+        template 'layout.html.erb', "app/views/layouts/application.html.erb"
+        copy_file '#{file_name}/stylesheet.css', "public/stylesheets/#{file_name}.css"
         copy_file 'layout_helper.rb', 'app/helpers/layout_helper.rb'
       end
 
