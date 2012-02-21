@@ -23,8 +23,10 @@ div {
 #container { 
 	margin:     auto;
 	width:      900px;
-    background:url('/images/ocean_bg.gif') top left;
+    background:url('/images/ocean_bg.gif') no-repeat top left;
 	position:   absolute;
+	padding:    0px;
+	margin:     0px;
 }
 
 p {
