@@ -21,12 +21,31 @@ div {
 }
 
 #container { 
-	margin:     auto;
 	width:      900px;
     background:url('/images/ocean_bg.gif') no-repeat top left;
 	position:   absolute;
 	padding:    0px;
 	margin:     0px;
+}
+
+th {
+font-size: 1.4em;
+text-align: left;
+padding-top: 5px;
+padding-bottom: 4px;
+background-color: #2a4870;
+color: white;
+}
+
+td, th {
+font-size: 1.2em;
+border: 1px solid #2a4870;
+padding: 3px 7px 2px 7px;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing:  2px;
 }
 
 p {
