@@ -23,7 +23,7 @@ div {
 #container { 
 	margin:     auto;
 	width:      900px;
-    background:url('ocean_bg.gif') no-repeat top center;
+    background:url('/images/ocean_bg.gif') no-repeat top center;
 	position:   relative;
 }
 
