@@ -9,7 +9,7 @@ class ScssLayoutGenerator < Rails::Generator::Base
       m.directory 'app/views/layouts'
       m.directory 'public/stylesheets'
       m.directory 'app/helpers'
-      m.direcory  'app/public/images'
+      m.direcory  'public/images'
       
       m.template "layout.html.erb", "app/views/layouts/#{file_name}.html.erb"
       
