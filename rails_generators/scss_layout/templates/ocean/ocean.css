@@ -28,6 +28,13 @@ div {
 	margin:     0px;
 }
 
+#content {
+	width:            700px;
+	background-color: #ffffff;
+	padding:          50px;
+	margin:           50px;
+}
+
 th {
 font-size: 1.4em;
 text-align: left;
