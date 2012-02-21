@@ -33,6 +33,7 @@ div {
 	background-color: #ffffff;
 	padding:          50px;
 	margin:           50px;
+	position:         relative;
 }
 
 th {
