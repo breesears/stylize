@@ -24,8 +24,8 @@ div {
 	width:      900px;
     background:url('/images/ocean_bg.gif') no-repeat top left;
 	position:   absolute;
-	padding:    -5px;
-	margin:     -5px;
+	padding:    -15px;
+	margin:     -15px;
 	height:     800px;
 }
 
