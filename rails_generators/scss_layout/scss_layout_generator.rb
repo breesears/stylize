@@ -10,7 +10,6 @@ class ScssLayoutGenerator < Rails::Generator::Base
       m.directory 'public/stylesheets'
       m.directory 'app/helpers'
       m.directory 'public/images'
-      m.directory 'stylize'
     
       
       m.template "layout.html.erb", "app/views/layouts/#{file_name}.html.erb"
@@ -18,7 +17,6 @@ class ScssLayoutGenerator < Rails::Generator::Base
       m.file     "#{file_name}/#{file_name}.css", "public/stylesheets/#{file_name}.css"
       m.file     "#{file_name}/#{file_name}_bg.gif", "public/images/#{file_name}_bg.gif"
       m.file     "helper.rb", "app/helpers/layout_helper.rb"
-      m.file     "stylize/Gemfile", "Gemfile"
     end
   end
   
