@@ -23,7 +23,7 @@ div {
 
 div#container { 
 	width:      70%;
-    background:url('/images/blue.gif') top left;
+    background:url('/images/ocean_bg.gif') top left;
 	position:   absolute;
 	margin-left: auto;
 	margin-right: auto;
