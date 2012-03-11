@@ -18,7 +18,6 @@ module Scss
       def file_name
         layout_name.underscore
       end
-      s
     end
   end
 end
