@@ -15,8 +15,8 @@ class ScssLayoutGenerator < Rails::Generator::Base
       
       m.template "layout.html.erb", "app/views/layouts/application.html.erb"
       
-      m.file     "#{file_name}/#{color_name}.css", "public/stylesheets/#{file_name}/#{color_name}.css"
-      m.file     "#{file_name}/#{color_name}_bg.gif", "public/images/#{file_name}/#{color_name}_bg.gif"
+      m.file     "#{file_name}/#{file_name}.css", "public/stylesheets/#{file_name}/#{file_name}.css"
+      m.file     "#{file_name}/#{file_name}_bg.gif", "public/images/#{file_name}/#{file_name}_bg.gif"
       m.file     "helper.rb", "app/helpers/layout_helper.rb"
     end
   end
