@@ -1,7 +1,8 @@
 class ScssLayoutGenerator < Rails::Generator::Base
   def initialize(runtime_args, runtime_options= {})
     super
-    @name = @args.first || 'application'
+    @name = @args.first
+    @color = @args.second
   end
   
   def manifest
@@ -12,16 +13,20 @@ class ScssLayoutGenerator < Rails::Generator::Base
       m.directory 'public/images'
     
       
-      m.template "layout.html.erb", "app/views/layouts/#{file_name}.html.erb"
+      m.template "layout.html.erb", "app/views/layouts/application.html.erb"
       
-      m.file     "#{file_name}/#{file_name}.css", "public/stylesheets/#{file_name}.css"
-      m.file     "#{file_name}/#{file_name}_bg.gif", "public/images/#{file_name}_bg.gif"
+      m.file     "#{file_name}/#{color_name}.css", "public/stylesheets/#{file_name}/#{color_name}.css"
+      m.file     "#{file_name}/#{color_name}_bg.gif", "public/images/#{file_name}/#{color_name}_bg.gif"
       m.file     "helper.rb", "app/helpers/layout_helper.rb"
     end
   end
   
   def file_name
     @name.underscore
+  end
+  
+  def color_name
+    @color.underscore
   end
   
   protected
