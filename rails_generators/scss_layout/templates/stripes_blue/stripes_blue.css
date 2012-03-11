@@ -36,8 +36,10 @@ div#container {
 #content {
 	width:            60%;
 	background-color: #ffffff;
-	margin-top:       20%;
-	padding-top:      10%;
+	margin-top:       10%;
+	padding-top:      5%;
+	margin-left:      auto;
+	margin-rigth:     auto;
 }
 
 th {
