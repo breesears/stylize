@@ -21,25 +21,23 @@ div {
 }
 
 div#container { 
-	width:      70%;
+	width:      90%;
     background:url('/images/stripes_blue/stripes_blue_bg.gif') top center;
     background-repeat:     no-repeat;
     background-attachment: fixed;
 	position:              absolute;
 	margin-left:           auto;
 	margin-right:          auto;
-	margin-top:            -5px;
-	padding-top:           -5px;
+	margin-top:            -10px;
+	padding-top:           0px;
 	}
 
 #content {
 	width:            80%;
 	background-color: #ffffff;
-	background-position: top;
 	margin-left:      auto;
 	margin-right:     auto;
 	position:         relative;
-	height:           1000px;
 	margin-top:       0px;
 	padding-top:      40px;
 }
