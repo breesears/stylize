@@ -4,7 +4,7 @@ module Scss
   module Generators
     class LayoutGenerator < Base
       argument :layout_name, :type => :string, :default => 'application', :banner => 'layout_name'
-  s
+  
 
       def create_layout
         template 'layout.html.erb', "app/views/layouts/application.html.erb"
