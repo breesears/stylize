@@ -4,7 +4,7 @@ module Scss
   module Generators
     class LayoutGenerator < Base
       argument :layout_name, :type => :string, :default => 'application', :banner => 'layout_name'
-      argument :c_name,  :type => :string, :banner => 'c_name'
+      #argument :c_name,  :type => :string, :banner => 'c_name'
 
       def create_layout
         template 'layout.html.erb', "app/views/layouts/application.html.erb"
@@ -19,9 +19,9 @@ module Scss
         layout_name.underscore
       end
       
-      def color_name
-        c_name.underscore
-      end
+  #    def color_name
+   #     c_name.underscore
+    #  end
     end
   end
 end
