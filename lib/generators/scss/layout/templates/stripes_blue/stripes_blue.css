@@ -33,13 +33,13 @@ div#container {
 	}
 
 #content {
-	width:            80%;
+	width:            60%;
 	background-color: #ffffff;
 	margin-left:      auto;
 	margin-right:     auto;
-	position:         relative;
-	margin-top:       0px;
-	padding-top:      40px;
+	position:         absolute;
+	margin-top:       40px;
+	padding-top:      0px;
 }
 
 th {
