@@ -8,7 +8,7 @@ class ScssLayoutGenerator < Rails::Generator::Base
   def manifest
     record do |m|
       m.directory 'app/views/layouts'
-      m.directory 'public/stylesheets'
+      m.directory 'public/stylesheets/'
       m.directory 'app/helpers'
       m.directory 'public/images'
     
