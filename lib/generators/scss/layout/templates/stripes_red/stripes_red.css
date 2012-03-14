@@ -22,7 +22,7 @@ div {
 
 div#container { 
 	width:                 100%;
-    background:            url('/images/stripes_blue/stripes_red_bg.gif') top center;
+    background:            url('/images/stripes_red/stripes_red_bg.gif') top center;
     background-repeat:     no-repeat;
     background-attachment: fixed;
 	position:              fixed;
