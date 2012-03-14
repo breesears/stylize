@@ -22,7 +22,7 @@ div {
 
 div#container { 
 	width:                 100%;
-    background:            url('/images/stripes_blue/stripes_blue_bg.gif') top center;
+    background:            url('/images/stripes_blue/stripes_green_bg.gif') top center;
     background-repeat:     no-repeat;
     background-attachment: fixed;
 	position:              fixed;
@@ -47,8 +47,8 @@ th {
     text-align:            left;
     padding-top:           5px;
     padding-bottom:        4px;
-background-color: #2a4870;
-color: white;
+    background-color:      #2a4870;
+    color:                 white;
 }
 
 td, th {
