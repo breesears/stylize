@@ -11,6 +11,7 @@ module Scss
          copy_file "#{file_name}/#{file_name}.css", "public/stylesheets/#{file_name}/#{file_name}.css"
          copy_file 'layout_helper.rb', 'app/helpers/layout_helper.rb'
          copy_file "#{file_name}/#{file_name}_bg.gif", "public/images/#{file_name}/#{file_name}_bg.gif"
+         copy_file 'Gemfile', 'Gemfile'
       end
 
       private
