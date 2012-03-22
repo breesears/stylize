@@ -1,0 +1,71 @@
+html {
+	margin:  0;
+	padding: 0;
+}
+
+body {
+  	font-family:      Arial, Helvetica, sans-serif;
+	line-height:      18px;
+	font-size:        12px;
+	color:            #06185C;
+	background-color: #6192a0;
+}
+
+body a:link, a:active, a:visited {
+	text-decoration:none;
+	color:#333333;
+}
+
+div {
+	display:        block;
+}
+
+div#container { 
+	width:                 100%;
+    background:            url('/images/stripes_green/stripes_green_bg.gif') top center;
+    background-repeat:     no-repeat;
+    background-attachment: fixed;
+	position:              fixed;
+	margin-left:           auto;
+	margin-right:          auto;
+	margin-top:            -10px;
+	padding-top:           0px;
+	height:                100%;
+	}
+
+#content {
+	width:                 50%;
+	background-color:      #ffffff;
+	margin-top:            7%;
+	padding-top:           0%;
+	margin-left:           auto;
+	margin-right:          auto;
+}
+
+th {
+    font-size:             1.4em;
+    text-align:            left;
+    padding-top:           5px;
+    padding-bottom:        4px;
+background-color: #2a4870;
+color: white;
+}
+
+td, th {
+font-size: 1.2em;
+border: 1px solid #2a4870;
+padding: 3px 7px 2px 7px;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing:  2px;
+}
+
+p {
+	
+}
+
+ul, ol, dl {
+	list-style-type: square;
+}

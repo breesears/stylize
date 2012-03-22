@@ -11,6 +11,9 @@ module Scss
         "rails generate scss:#{generator_name} #{self.arguments.map{ |a| a.usage }.join(' ')} [options]"
       end
 
+
+        
+        
       private
 
       def add_gem(name, options = {})
