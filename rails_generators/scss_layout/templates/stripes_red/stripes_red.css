@@ -47,19 +47,19 @@ th {
     text-align:            left;
     padding-top:           5px;
     padding-bottom:        4px;
-    background-color:      #2a4870;
+    background-color:      #490303;
     color:                 white;
 }
 
 td, th {
 font-size: 1.2em;
-border: 1px solid #2a4870;
+border: 1px solid #490303;
 padding: 3px 7px 2px 7px;
 }
 
 table {
 	border-collapse: separate;
-	border-spacing:  2px;
+	border-spacing:  0px;
 }
 
 p {

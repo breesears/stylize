@@ -69,3 +69,8 @@ p {
 ul, ol, dl {
 	list-style-type: square;
 }
+
+$.datepicker.setDefaults({
+   showOn: 'both',
+   buttonImageOnly: true,
+   buttonText: 'Calendar' });
