@@ -8,12 +8,12 @@ body {
 	line-height:      18px;
 	font-size:        12px;
 	color:            #06185C;
-	background-color: #490303;
+	background-color: #000000;
 }
 
 body a:link, a:active, a:visited {
 	text-decoration:none;
-	color:#333333;
+	color:#000000;
 }
 
 div {
@@ -22,7 +22,7 @@ div {
 
 div#container { 
 	width:                 100%;
-    background:            url('/images/stripes_red/stripes_red_bg.gif') top center;
+    background:            url('/images/scene_city/scene_city_bg.gif') top center;
     background-repeat:     no-repeat;
     background-attachment: fixed;
 	position:              fixed;
@@ -47,24 +47,31 @@ th {
     text-align:            left;
     padding-top:           5px;
     padding-bottom:        4px;
-    background-color:      #490303;
-    color:                 white;
+background-color: #2a4870;
+color: white;
 }
 
 td, th {
 font-size: 1.2em;
-border: 1px solid #490303;
-padding: 3px;
+border: 1px solid #2a4870;
+padding: 3px 7px 2px 7px;
 }
 
 table {
 	border-collapse: separate;
-	border-spacing:  0px;
+	border-spacing:  2px;
 }
 
 p {
 	
 }
+
+$.datepicker.setDefaults({
+   showOn: 'both',
+   buttonImageOnly: true,
+   buttonText: 'Calendar' });
+
+
 
 ul, ol, dl {
 	list-style-type: square;
