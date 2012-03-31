@@ -17,9 +17,11 @@ a:link, a:active, a:visited {
 }
 
 div#nav {
-	text-align: right;
+	float: right;
 	padding-top: 60%;
 	padding-right: 20%;
+	width: 80%;
+	height: 30%;
 }
 
 div {
