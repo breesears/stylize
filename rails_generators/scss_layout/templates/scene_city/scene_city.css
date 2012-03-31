@@ -16,7 +16,7 @@ a:link, a:active, a:visited {
 	color:#cccccc;
 }
 
-nav {
+div#nav {
 	text-align: right;
 	padding-top: 60%;
 	padding-right: 20%;
