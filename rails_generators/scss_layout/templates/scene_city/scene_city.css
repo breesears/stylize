@@ -13,12 +13,13 @@ body {
 
 a:link, a:active, a:visited {
 	text-decoration:none;
-	color:#000000;
+	color:#ffffff;
 }
 
 nav {
 	text-align: right;
 	padding-top: 60%;
+	padding-right: 20%;
 }
 
 div {
