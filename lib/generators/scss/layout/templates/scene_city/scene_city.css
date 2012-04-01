@@ -12,13 +12,13 @@ body {
 }
 
 a:link, a:active, a:visited {
-	text-decoration:none;
-	color:#cccccc;
+	text-decoration:     none;
+	color:               #cccccc;
 }
 
 
 div {
-	display:        block;
+	display:              block;
 }
 
 div#container { 
@@ -35,12 +35,12 @@ div#container {
 	}
 
 div#navbar {
-		float: right;
-		padding-top: 60%;
-		padding-right: 20%;
-		width: 80%;
-		height: 30%;
-		position: relative;
+		float:             right;
+		padding-top:       60%;
+		padding-right:     20%;
+		width:             80%;
+		height:            30%;
+		position:          absolute;
 	}
 	
 #content {
@@ -56,19 +56,19 @@ th {
     text-align:            left;
     padding-top:           5px;
     padding-bottom:        4px;
-background-color: #2a4870;
-color: white;
+    background-color:      #2a4870;
+    color:                 white;
 }
 
 td, th {
-font-size: 1.2em;
-border: 1px solid #2a4870;
-padding: 3px 7px 2px 7px;
+    font-size:             1.2em;
+    border:                1px solid #2a4870;
+    padding:               3px 7px 2px 7px;
 }
 
 table {
-	border-collapse: separate;
-	border-spacing:  2px;
+	border-collapse:       separate;
+	border-spacing:        2px;
 }
 
 p {

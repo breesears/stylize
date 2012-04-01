@@ -1,7 +1,7 @@
 <!DOCTYPE hmtl>
   <html>
     <head>
-      <title><%%= content_for?(:title) ? yield(:title)  :  "Untitles" %></title>
+      <title><%%= content_for?(:title) ? yield(:title)  :  "Rails" %></title>
       <%%= stylesheet_link_tag "<%= file_name %>/<%= file_name %>" %>
       <%%= javascript_include_tag :defaults %>
       <%%= csrf_meta_tag %>
@@ -9,16 +9,17 @@
     </head>
     <body>
       <div id="container">
-	   
-		</div>
-	    <div id="content">
-			 <div id="navbar">
+	   	 <div id="navbar">
 				   <nav>
 						<a href="#">Menu item 1</a>  |  
 						<a href="#">Menu item 2</a>  |  
 						<a href="#">Menu item 3</a>  |  
 						<a href="#">Menu item 4</a>  |  
 				  </nav>
+		   </div>
+	   
+	 <div id="content">
+		
         <!-- <%% flash.each do |name, msg| %>
                   <%%= content_tag :div, msg, :id => "flash_#{name}" %>
                 <%% end %>
