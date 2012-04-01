@@ -11,19 +11,18 @@
       <div id="container">
 				
 	    <div id="content">
-			 	<div id="navbar">
-				
+			 <div id="navbar">	
 						<a href="#">Menu item 1</a>  |  
 						<a href="#">Menu item 2</a>  |  
 						<a href="#">Menu item 3</a>  |  
 						<a href="#">Menu item 4</a>  |  
 				
-				</div>
-        <!-- <%% flash.each do |name, msg| %>
+			</div>
+            <!-- <%% flash.each do |name, msg| %>
                   <%%= content_tag :div, msg, :id => "flash_#{name}" %>
                 <%% end %>
                 <%%= content_tag :h1, yield(:title) if show_title? %> -->
-           <%%= yield %>
+            <%%= yield %>
          </div>
       </div>
     </body>

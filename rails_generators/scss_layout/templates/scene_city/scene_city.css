@@ -36,8 +36,9 @@ div#container {
 	
 #navbar {
 	float:               right;
-	padding-top:         20%;
+	padding-top:         0%;
 	padding-right:       20%;
+	margin-top:        -10%;
 	width:               60%;
 	height:              20%;
 	position:            absolute;
