@@ -12,6 +12,7 @@ class ScssLayoutGenerator < Rails::Generator::Base
       m.directory 'app/helpers'
       m.directory 'public/images'
       m.directory 'public/script/'
+      m.directory 'jquery/'
     
       
       m.template "layout.html.erb", "app/views/layouts/application.html.erb"
