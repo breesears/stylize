@@ -11,10 +11,11 @@ class ScssLayoutGenerator < Rails::Generator::Base
       m.directory 'public/stylesheets/'
       m.directory 'app/helpers'
       m.directory 'public/images'
+      m.directory 'public/script/'
     
       
       m.template "layout.html.erb", "app/views/layouts/application.html.erb"
-      
+      m.file     "jquery.datePicker.js", "public/script"
       m.file     "#{file_name}/#{file_name}.css", "public/stylesheets/#{file_name}/#{file_name}.css"
       m.file     "#{file_name}/#{file_name}_bg.gif", "public/images/#{file_name}/#{file_name}_bg.gif"
     end
