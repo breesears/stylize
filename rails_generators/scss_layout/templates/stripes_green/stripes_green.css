@@ -32,15 +32,16 @@ div#container {
 	padding-top:           0px;
 	height:                100%;
 	}
-	
-div#navbar {
-	float: right;
-	padding-top: 60%;
-	padding-right: 20%;
-	width: 80%;
-	height: 30%;
-	position: relative;
-}
+	div#navbar {
+					text-align:          center;
+					margin-left:           auto;
+					margin-right:          auto;
+		           	margin-top:          -5%;
+		            padding-left:        3%;
+					width:               40%;
+					height:              10%;
+					position:            absolute;
+	}
 
 #content {
 	width:                 50%;
