@@ -18,9 +18,9 @@ module Scss
         f_name.underscore
       end 
       
-      def css_class
-        css_name.underscore
-      end
+    #  def css_class
+     #   css_name.underscore
+      #end
     end
   end
 end
