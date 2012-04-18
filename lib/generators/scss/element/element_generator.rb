@@ -10,8 +10,14 @@ module Scss
       argument :css_name,     :type => :string, :banner => 'css_name'
       argument :text_name,    :type => :string, :default => '', :banner => 'text_name' 
       
+      def which_element
+        if element_name == 'p' || 'div'
+          add_element
+        end
+      end
+      
       def add_element
-        append_file "app/views/#{file_name}.html.erb", "<#{element} class=\"#{css_class}\">#{text_name}</#{element}"
+        append_file "app/views/#{file_name}.html.erb", "<#{element} class=\"#{css_class}\">#{text_name}</#{element}>"
       end
         
       def file_name
