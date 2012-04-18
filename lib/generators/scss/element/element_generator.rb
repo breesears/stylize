@@ -8,7 +8,7 @@ module Scss
       argument :element_name, :type => :string, :banner => 'element_name'
       argument :css_name,     :type => :string, :banner => 'css_name'
       agrument :f_name,       :type => :string, :banner => 'f_name'
-      agrument :text_name,    :type => :string, :banner => 'text_name' :default => ""
+      agrument :text_name,    :type => :string, :banner => 'text_name'
       
       def add_element
         inject_into_class "app/views/#{file_name}.html.erb", "<#{element_name} = #{css_class}>#{text_name}</#{element_name}"
