@@ -9,8 +9,8 @@ module Scss
       argument :element_name, :type => :string,                   :banner => 'element_name'
       argument :css_name,     :type => :string,                   :banner => 'css_name'
       argument :text_name,    :type => :string,   :default => '', :banner => 'text_name' 
-      argument :rows,         :type => :integer,  :default => 0,  :banner => 'rows'
-      argument :cols,         :type => :integer,  :default => 0,  :banner => 'cols'
+      argument :rows,         :type => :string,   :default => '0',  :banner => 'rows'
+      argument :cols,         :type => :string,  :default => '0',  :banner => 'cols'
       
       def which_element
         if (element_name == ('p' || 'div'))
@@ -24,9 +24,9 @@ module Scss
       
       def rows_cols
         str = "<table>"
-        rows.each do |r|
+        r.each do |r|
           str << "<tr>\n"
-          cols.each do |c|
+          c.each do |c|
             str << "<td>&nbsp;</td>\n"
           end
           str << "</tr>"
@@ -34,6 +34,13 @@ module Scss
         str << "</table>"
       end
      
+      def r
+        rows.to_i
+      end
+      
+      def c
+        cols.to_i
+      end
         
       def file_name
         f_name.underscore
