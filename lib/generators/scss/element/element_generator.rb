@@ -15,18 +15,24 @@ module Scss
       def which_element
         if (element_name == ('p' || 'div'))
           append_file "app/views/#{file_name}.html.erb", "<#{element} class=\"#{css_class}\">#{text_name}</#{element}>"
-        else (element_name == ('table')
-          append_file "app/views/#{file_name}.html.erb", "<#{element}>",  
-            rows.each do |r|
-               "<tr>\n",
-                 cols.each do |c|
-                   "<td>&nbsp;</td>\n",
-                  end
-               "</tr>\n"
-            end
+        else
+          if (element_name == 'table')
+           append_file "app/views/#{file_name}.html.erb",  str 
+          end 
         end
       end
       
+      def rows_cols
+        str = "<table>"
+        rows.each do |r|
+          str << "<tr>\n"
+          cols.each do |c|
+            str << "<td>&nbsp;</td>\n"
+          end
+          str << "</tr>"
+        end
+        str << "</table>"
+      end
      
         
       def file_name
