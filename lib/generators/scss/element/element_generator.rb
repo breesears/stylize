@@ -11,13 +11,14 @@ module Scss
       argument :text_name,    :type => :string,   :default => '', :banner => 'text_name' 
       argument :rows,         :type => :string,   :default => '0',  :banner => 'rows'
       argument :cols,         :type => :string,  :default => '0',  :banner => 'cols'
+      argument :str,          :type => :string
       
       def which_element
         if (element_name == ('p' || 'div'))
           append_file "app/views/#{file_name}.html.erb", "<#{element} class=\"#{css_class}\">#{text_name}</#{element}>"
         else
           if (element_name == 'table')
-           append_file "app/views/#{file_name}.html.erb",  str 
+           append_file "app/views/#{file_name}.html.erb",  rows_cols
           end 
         end
       end
@@ -32,6 +33,7 @@ module Scss
           str << "</tr>"
         end
         str << "</table>"
+        return str
       end
      
       def r
