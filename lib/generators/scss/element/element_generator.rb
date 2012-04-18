@@ -21,3 +21,6 @@ module Scss
       def css_class
         css_name.underscore
       end
+    end
+  end
+end
