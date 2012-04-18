@@ -5,10 +5,10 @@ module Scss
     class ElementGenerator < Base
       include Rails::Generators
       
-      argument :element_name, :type => :string, :banner => 'element_name'
-      argument :css_name,     :type => :string, :banner => 'css_name'
-      argument :f_name,       :type => :string, :banner => 'f_name'
-      argument :text_name,    :type => :string, :banner => 'text_name'
+   #   argument :element_name, :type => :string, :banner => 'element_name'
+    #  argument :css_name,     :type => :string, :banner => 'css_name'
+     argument :f_name,       :type => :string, :banner => 'f_name'
+   #   argument :text_name,    :type => :string, :banner => 'text_name'
       
       def add_element
         append_file "app/views/#{file_name}.html.erb", "test" #{}"<#{element_name} = #{css_class}>#{text_name}</#{element_name}"
