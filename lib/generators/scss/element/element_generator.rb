@@ -24,9 +24,9 @@ module Scss
       
       def rows_cols
         str = "<table>"
-        r.each do |r|
+        r.times do |r|
           str << "<tr>\n"
-          c.each do |c|
+          c.times do |c|
             str << "<td>&nbsp;</td>\n"
           end
           str << "</tr>"
