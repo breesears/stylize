@@ -11,7 +11,7 @@ module Scss
       argument :text_name,    :type => :string,   :default => '', :banner => 'text_name' 
       argument :rows,         :type => :string,   :default => '0',  :banner => 'rows'
       argument :cols,         :type => :string,  :default => '0',  :banner => 'cols'
-      argument :str,          :type => :string
+   
       
       def which_element
         if (element_name == ('p' || 'div'))
