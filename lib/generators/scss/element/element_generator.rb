@@ -11,14 +11,12 @@ module Scss
       argument :text_name,    :type => :string, :default => '', :banner => 'text_name' 
       
       def which_element
-        if element_name == 'p' || 'div'
-          add_element
+        if (element_name == ('p' || 'div'))
+          append_file "app/views/#{file_name}.html.erb", "<#{element} class=\"#{css_class}\">#{text_name}</#{element}>"
         end
       end
       
-      def add_element
-        append_file "app/views/#{file_name}.html.erb", "<#{element} class=\"#{css_class}\">#{text_name}</#{element}>"
-      end
+     
         
       def file_name
         f_name.underscore
