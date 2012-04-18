@@ -7,7 +7,7 @@ module Scss
       
       argument :element_name, :type => :string, :banner => 'element_name'
       argument :css_name,     :type => :string, :banner => 'css_name'
-      agrument :f_name,       :type => :string, :banner => 'f_name'
+      argument :f_name,       :type => :string, :banner => 'f_name'
       agrument :text_name,    :type => :string, :banner => 'text_name'
       
       def add_element
