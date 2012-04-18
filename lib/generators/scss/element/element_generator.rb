@@ -11,7 +11,7 @@ module Scss
       argument :text_name,    :type => :string, :banner => 'text_name'
       
       def add_element
-        inject_into_class "app/views/#{file_name}.html.erb", "<#{element_name} = #{css_class}>#{text_name}</#{element_name}"
+        append_file "app/views/#{file_name}.html.erb", "test" #{}"<#{element_name} = #{css_class}>#{text_name}</#{element_name}"
       end
         
       def file_name
