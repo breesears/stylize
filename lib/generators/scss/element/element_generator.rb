@@ -5,12 +5,12 @@ module Scss
     class ElementGenerator < Base
       include Rails::Generators
       
-      argument :f_name,       :type => :string,                  :banner => 'f_name'
-      argument :element_name, :type => :string,                  :banner => 'element_name'
-      argument :css_name,     :type => :string,                  :banner => 'css_name'
-      argument :text_name,    :type => :string,  :default => '', :banner => 'text_name' 
-      argument :rows,         :type => :number,  :default => 0,  :banner => 'rows'
-      argument :cols,         :type => :number,  :default => 0,  :banner => 'cols'
+      argument :f_name,       :type => :string,                   :banner => 'f_name'
+      argument :element_name, :type => :string,                   :banner => 'element_name'
+      argument :css_name,     :type => :string,                   :banner => 'css_name'
+      argument :text_name,    :type => :string,   :default => '', :banner => 'text_name' 
+      argument :rows,         :type => :integer,  :default => 0,  :banner => 'rows'
+      argument :cols,         :type => :integer,  :default => 0,  :banner => 'cols'
       
       def which_element
         if (element_name == ('p' || 'div'))
