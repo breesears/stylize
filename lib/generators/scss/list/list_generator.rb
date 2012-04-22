@@ -5,10 +5,10 @@ module Scss
     class ListGenerator < Base
       include Rails::Generators
       
-      argument :f_name,        :type => :string,                     :banner => 'f_name'
-      argument :list_type,     :type => :string,   :default => 'u'   :banner => 'list_type'
-      argument :num_of_items,  :type => :string,   :default => '0',  :banner => 'num_of_items'
-      argument :text,          :type => :array,                      :banner => 'text'
+      argument :f_name,        :type => :string,                      :banner => 'f_name'
+      argument :list_type,     :type => :string,   :default => 'u',   :banner => 'list_type'
+      argument :num_of_items,  :type => :string,   :default => '0',   :banner => 'num_of_items'
+      argument :text,          :type => :array,                       :banner => 'text'
       
       append_file "app/views/#{file_name}.html.erb",  list_items
           
