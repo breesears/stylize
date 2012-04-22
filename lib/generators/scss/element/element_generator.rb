@@ -7,18 +7,24 @@ module Scss
       
       argument :f_name,       :type => :string,                   :banner => 'f_name'
       argument :element_name, :type => :string,                   :banner => 'element_name'
-      argument :css_name,     :type => :string,                   :banner => 'css_name'
      
-      argument :rows,         :type => :string,   :default => '0',  :banner => 'rows'
-      argument :cols,         :type => :string,  :default => '0',  :banner => 'cols'
+     
+     
+
+     
+    
    
-       argument :text_name,    :type => :string,   :default => '', :banner => 'text_name' 
+      
        
       def which_element
         if (element_name == ('p' || 'div'))
+                argument :css_name,     :type => :string,                   :banner => 'css_name'
+                 argument :text_name,    :type => :string,   :default => '', :banner => 'text_name' 
           append_file "app/views/#{file_name}.html.erb", "<#{element} class=\"#{css_class}\">#{text_name}</#{element}>"
         else
           if (element_name == 'table')
+              argument :rows,         :type => :string,   :default => '0',  :banner => 'rows'
+              argument :cols,         :type => :string,  :default => '0',  :banner => 'cols'
            append_file "app/views/#{file_name}.html.erb",  rows_cols
           end 
         end
