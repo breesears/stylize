@@ -12,6 +12,10 @@ module Scss
       append_file "app/views/#{file_name}.html.erb",  list_items
           
       
+      def file_name
+        f_name.underscore
+      end
+        
       def list_items
         if (list_type == 'o') 
           str = "<ol>"
@@ -30,10 +34,7 @@ module Scss
         end
       end
      
-        
-      def file_name
-        f_name.underscore
-      end 
+    
       
      
     end
