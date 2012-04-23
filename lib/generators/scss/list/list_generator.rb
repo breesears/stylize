@@ -25,7 +25,9 @@ module Scss
         end
         
         text.each do |t|
-          str << "<li>" t "</li>\n"
+          str << "<li>" 
+          str << t 
+          str << "</li>\n"
         end
         
         if (list_type == 'o')  
