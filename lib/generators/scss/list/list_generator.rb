@@ -9,7 +9,7 @@ module Scss
       argument :list_type,     :type => :string,                      :banner => 'list_type'
       argument :text,          :type => :array,                       :banner => 'text'
       
-      append_file "app/views/#{file_name}.html.erb",  list_items
+      append_file "app/views/#{f_name}.html.erb",  list_items
           
       
       def file_name
