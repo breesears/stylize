@@ -19,19 +19,19 @@ module Scss
         
       def list_items
         if (list_type == 'o') 
-          str = "<ol>"
+          str = "<ol>\n"
         else
-          str = "<ul>"
+          str = "<ul>\n"
         end
         
         text.each do |t|
-          str << "<li>t</li>\n"
+          str << "<li>" t "</li>\n"
         end
         
         if (list_type == 'o')  
-          str << "</ol>"
+          str << "</ol>\n"
         else
-          str << "</ul>"
+          str << "</ul>\n"
         end
       end
      
