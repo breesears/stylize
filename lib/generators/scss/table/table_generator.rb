@@ -9,8 +9,9 @@ module Scss
       argument :rows,         :type => :string,   :default => '0',  :banner => 'rows'
       argument :cols,         :type => :string,   :default => '0',  :banner => 'cols'
       
-      append_file "app/views/#{file_name}.html.erb",  rows_cols
-          
+      def create_element
+        append_file "app/views/#{file_name}.html.erb",  rows_cols
+      end  
       
       def rows_cols
         str = "<table>"

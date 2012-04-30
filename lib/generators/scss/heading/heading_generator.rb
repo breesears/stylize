@@ -7,9 +7,10 @@ module Scss
       
       argument :f_name,       :type => :string,                   :banner => 'f_name'
       argument :text_name,    :type => :string,   :default => '', :banner => 'text_name' 
-          
-      append_file "app/views/#{file_name}.html.erb", "<p class=\"heading\">#{text_name}</p>"
-        
+       
+      def create_element   
+        append_file "app/views/#{file_name}.html.erb", "<p class=\"heading\">#{text_name}</p>"
+      end
         
       def file_name
         f_name.underscore
