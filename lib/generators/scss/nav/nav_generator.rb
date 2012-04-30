@@ -9,7 +9,7 @@ module Scss
       argument :text,          :type => :array,                       :banner => 'text'
       
       def create_element
-        append_file "app/views/#{file_name}.html.erb",  list_items
+        append_file "app/views/#{file_name}.html.erb",  nav_items
       end    
       
       def file_name
