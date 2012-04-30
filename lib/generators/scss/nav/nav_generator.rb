@@ -17,7 +17,7 @@ module Scss
       end
         
       def nav_items
-        str << "<ul class=\"navbar\">"
+        str = "<ul class=\"navbar\">"
         text.each do |t|
           str << "<li class=\"navitem\">"
           str << "<%= link_to '" << t << "'," << t << "%>"
