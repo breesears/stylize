@@ -20,6 +20,7 @@ module Scss
         
         
         text.each do |t|
+          str = "<ul"
           str << "<li>" 
           str << t 
           str << "</li>\n"
