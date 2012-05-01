@@ -17,17 +17,34 @@ module Scss
       end
         
       def nav_items
-        str = "<ul class=" # \"navbar\">"
-        text.each do |t|
-          str << "<li class" #=\"navitem\">"
-          str << "<%= link_to '" 
-          str << t 
-          str << "'," 
-          str << t 
-          str << "%>"
-          str << "</li>\n"
-         str << "</ul>"
+        if (list_type == 'o') 
+          str = "<ol>\n"
+        else
+          str = "<ul>\n"
         end
+        
+        text.each do |t|
+          str << "<li>" 
+          str << t 
+          str << "</li>\n"
+        end
+        
+        if (list_type == 'o')  
+          str << "</ol>\n"
+        else
+          str << "</ul>\n"
+        end
+        # str = "<ul class=\"navbar\">"
+        #        text.each do |t|
+        #          str << "<li class=\"navitem\">"
+        #          str << "<%= link_to '" 
+        #          str << t 
+        #          str << "'," 
+        #          str << t 
+        #          str << "%>"
+        #          str << "</li>\n"
+        #         str << "</ul>"
+        #        end
       end
      
     
