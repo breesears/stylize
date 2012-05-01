@@ -6,7 +6,6 @@ module Scss
       include Rails::Generators
       
       argument :f_name,        :type => :string,                      :banner => 'f_name'
-       argument :list_type,     :type => :string,                      :banner => 'list_type'
       argument :text,          :type => :array,                       :banner => 'text'
       
       def create_element
@@ -18,11 +17,7 @@ module Scss
       end
         
       def nav_items
-        if (list_type == 'o') 
-          str = "<ol>\n"
-        else
-          str = "<ul>\n"
-        end
+        
         
         text.each do |t|
           str << "<li>" 
@@ -30,11 +25,8 @@ module Scss
           str << "</li>\n"
         end
         
-        if (list_type == 'o')  
-          str << "</ol>\n"
-        else
-          str << "</ul>\n"
-        end
+       
+        
         # str = "<ul class=\"navbar\">"
         #        text.each do |t|
         #          str << "<li class=\"navitem\">"
