@@ -29,11 +29,7 @@ module Scss
           str << "</li>\n"
         end
         
-        if (list_type == 'o')  
-          str << "</ol>\n"
-        else
-          str << "</ul>\n"
-        end
+      
         # str = "<ul class=\"navbar\">"
         #        text.each do |t|
         #          str << "<li class=\"navitem\">"
