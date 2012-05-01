@@ -6,7 +6,7 @@ module Scss
       include Rails::Generators
       
       argument :f_name,        :type => :string,                      :banner => 'f_name'
- argument :list_type,     :type => :string,                      :banner => 'list_type'
+ # argument :list_type,     :type => :string,                      :banner => 'list_type'
       argument :text,          :type => :array,                       :banner => 'text'
       
       def create_element
@@ -19,30 +19,31 @@ module Scss
         
       def nav_items
         
-          str = "<ol>\n"
+          # str = "<ol>\n"
+          #   
+          #     
+          #    
+          #    text.each do |t|
+          #      str << "<li>" 
+          #      str << t 
+          #      str << "</li>\n"
+          #    end
+          #    
+          #    
+          #      str << "</ol>\n"
        
-         
-        
-        text.each do |t|
-          str << "<li>" 
-          str << t 
-          str << "</li>\n"
-        end
-        
-        
-          str << "</ol>\n"
-       
-        # str = "<ul class=\"navbar\">"
-        #        text.each do |t|
-        #          str << "<li class=\"navitem\">"
-        #          str << "<%= link_to '" 
-        #          str << t 
-        #          str << "'," 
-        #          str << t 
-        #          str << "%>"
-        #          str << "</li>\n"
-        #         str << "</ul>"
-        #        end
+        str = "<ul class=\"navbar\">"
+                      text.each do |t|
+                        str << "<li class=\"navitem\">"
+                        str << "<%= link_to '" 
+                        str << t 
+                        str << "'," 
+                        str << t 
+                        str << "%>"
+                        str << "</li>\n"
+                      end
+                       str << "</ul>"
+                    
       end
      
     
