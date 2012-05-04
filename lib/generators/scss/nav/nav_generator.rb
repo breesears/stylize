@@ -6,8 +6,7 @@ module Scss
       include Rails::Generators
       
       argument :f_name,        :type => :string,                      :banner => 'f_name'
- # argument :list_type,     :type => :string,                      :banner => 'list_type'
-      argument :text,          :type => :hash,                       :banner => 'text'
+      argument :links,          :type => :hash,                       :banner => 'text'
       
       def create_element
         append_file "app/views/#{file_name}.html.erb",  nav_items
@@ -19,11 +18,11 @@ module Scss
         
       def nav_items
         str = "<ul class=\"navbar\">"
-                      text.each do |k, v| 
+                      links.each_pair do |k, v| 
                         str << "  <li class=\"navitem\">\n"
                         str << "<%= link_to '" 
                         str << k 
-                        str << "'," 
+                        str << "', " 
                         str << v 
                         str << "%>"
                         str << "  </li>\n"
