@@ -20,13 +20,14 @@ module Scss
       def nav_items
         str = "<ul class=\"navbar\">"
                       text.each do |t|
-                        str << "<li class=\"navitem\">"
+                        str << "&nbsp;&nbsp;<li class=\"navitem\">\n"
                         str << "<%= link_to '" 
                         str << t 
                         str << "'," 
+                        t.shift
                         str << t 
                         str << "%>"
-                        str << "</li>\n"
+                        str << "&nbsp;&nbsp;</li>\n"
                       end
                        str << "</ul>"
                     
