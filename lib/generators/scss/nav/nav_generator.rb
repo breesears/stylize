@@ -18,20 +18,6 @@ module Scss
       end
         
       def nav_items
-        
-          # str = "<ol>\n"
-          #   
-          #     
-          #    
-          #    text.each do |t|
-          #      str << "<li>" 
-          #      str << t 
-          #      str << "</li>\n"
-          #    end
-          #    
-          #    
-          #      str << "</ol>\n"
-       
         str = "<ul class=\"navbar\">"
                       text.each do |t|
                         str << "<li class=\"navitem\">"
