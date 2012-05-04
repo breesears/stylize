@@ -18,6 +18,9 @@ module Scss
         
       def nav_items
         str = "<ul class=\"navbar\">"
+            if links.empty?
+                 str << "yep"
+            end
                       links.each_pair do |k, v| 
                         str << "  <li class=\"navitem\">\n"
                         str << "<%= link_to '" 
