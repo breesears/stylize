@@ -7,7 +7,7 @@ module Scss
       
       argument :f_name,        :type => :string,                      :banner => 'f_name'
  # argument :list_type,     :type => :string,                      :banner => 'list_type'
-      argument :text,          :type => :array,                       :banner => 'text'
+      argument :text,          :type => :hash,                       :banner => 'text'
       
       def create_element
         append_file "app/views/#{file_name}.html.erb",  nav_items
@@ -19,15 +19,14 @@ module Scss
         
       def nav_items
         str = "<ul class=\"navbar\">"
-                      text.each do |t|
-                        str << "&nbsp;&nbsp;<li class=\"navitem\">\n"
+                      text.each do |k, v| 
+                        str << "  <li class=\"navitem\">\n"
                         str << "<%= link_to '" 
-                        str << t 
+                        str << k 
                         str << "'," 
-                        text.shift
-                        str << t 
+                        str << v 
                         str << "%>"
-                        str << "&nbsp;&nbsp;</li>\n"
+                        str << "  </li>\n"
                       end
                        str << "</ul>"
                     
