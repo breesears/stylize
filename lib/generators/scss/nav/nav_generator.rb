@@ -24,7 +24,7 @@ module Scss
                         str << "<%= link_to '" 
                         str << t 
                         str << "'," 
-                        t.shift
+                        text.shift
                         str << t 
                         str << "%>"
                         str << "&nbsp;&nbsp;</li>\n"
