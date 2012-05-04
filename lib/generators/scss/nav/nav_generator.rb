@@ -17,14 +17,14 @@ module Scss
       end
         
       def nav_items
-        str = "<ul class=\"navbar\">"
+        str = "<ul class=\"navbar\">\n"
                       links.each do |l| 
-                        str << "  <li class=\"navitem\">\n"
+                        str << "  <li class=\"navitem\">"
                         str << "<%= link_to '" 
                         str << links.shift
                         str << "', " 
                         str << links.shift 
-                        str << "%>"
+                        str << " %>"
                         str << "  </li>\n"
                       end
                        str << "</ul>"
