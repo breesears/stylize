@@ -14,7 +14,7 @@ module Scss
         
       def nav_items
         str = "<ul class=\"navbar\">\n"
-                      links.each do |l| 
+                      while links 
                         str << "  <li class=\"navitem\">"
                         str << "<%= link_to '" 
                         str << links.shift
@@ -24,7 +24,7 @@ module Scss
                         str << "  </li> | \n"
                       end
         str << "</ul>"
-                    return str
+                  
       end
      
     
