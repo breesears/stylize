@@ -5,16 +5,12 @@ module Scss
     class NavGenerator < Base
       include Rails::Generators
       
-      argument :f_name,        :type => :string,                      :banner => 'f_name'
       argument :links,         :type => :array,                       :banner => 'text'
       
       def create_element
-        append_file "app/views/#{file_name}.html.erb",  nav_items
+        append_file "app/views/layout/application.html.erb",  nav_items
       end    
       
-      def file_name
-        f_name.underscore
-      end
         
       def nav_items
         str = "<ul class=\"navbar\">\n"
