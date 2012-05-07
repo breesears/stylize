@@ -5,7 +5,7 @@ module Scss
     class NavGenerator < Base
       include Rails::Generators
       
-      argument :links,         :type => :array,                       :banner => 'text'
+      argument :links,  :type => :array, :banner => 'links'
       
       def create_element
         append_file "app/views/layouts/application.html.erb",  nav_items
@@ -23,7 +23,8 @@ module Scss
                         str << " %>"
                         str << "  </li> | \n"
                       end
-                      str << "</ul>"
+                        str << links.shift
+        str << "</ul>"
                     
       end
      
