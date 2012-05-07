@@ -59,6 +59,7 @@ ul#navbar {
 
 #navitem {
 	           text-weight:          bold;
+	           list-style-type:      none;
 	          
 }
 
