@@ -8,7 +8,7 @@ module Scss
       argument :links,         :type => :array,                       :banner => 'text'
       
       def create_element
-        append_file "app/views/layout/application.html.erb",  nav_items
+        append_file "app/views/layouts/application.html.erb",  nav_items
       end    
       
         
