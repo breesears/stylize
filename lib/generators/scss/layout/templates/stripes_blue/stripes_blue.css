@@ -34,16 +34,6 @@ div#container {
 	}
 	
 		
-div#navbar {
-				text-align:          center;
-				margin-left:           auto;
-				margin-right:          auto;
-	           	margin-top:          -5%;
-	            padding-left:        3%;
-				width:               40%;
-				height:              10%;
-				position:            absolute;
-}
 
 #content {
 	width:                 50%;
@@ -53,6 +43,25 @@ div#navbar {
 	margin-left:           auto;
 	margin-right:          auto;
 }
+
+
+ul#navbar {
+				text-align:          center;
+				margin-left:           auto;
+				margin-right:          auto;
+	           	margin-top:          -8%;
+	            padding-left:        3%;
+				width:               40%;
+				height:              10%;
+				position:            absolute;
+				list-style-type:     none;
+}
+
+#navitem {
+	           text-weight:          bold;
+	          
+}
+
 
 th {
     font-size:             1.4em;
