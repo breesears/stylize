@@ -57,20 +57,21 @@ ul.navbar {
 	list-style-type:     none;
 }
 
-.navitem {
-	           font-weight:          bold;
-	           display:              inline;
-	          
+li.navitem {
+    font-weight:         bold;
+    display:             inline;
+    padding-right:       2%;
+       
 }
 
 
 th {
-   				font-size:           1.4em;
-				text-align:          left;
-		  		padding-top:         5px;
-				padding-bottom:      4px;
-			    background-color:    #2a4870;
-			    color:               white;
+	font-size:           1.4em;
+	text-align:          left;
+ 	padding-top:         5px;
+	padding-bottom:      4px;
+    background-color:    #2a4870;
+    color:               white;
 }
 
 td, th {

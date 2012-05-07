@@ -21,9 +21,9 @@ module Scss
                         str << "', " 
                         str << links.shift 
                         str << " %>"
-                        str << "  </li>\n"
+                        str << "  </li> | \n"
                       end
-                       str << "</ul>"
+                      str << "</ul>"
                     
       end
      
