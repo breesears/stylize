@@ -19,11 +19,10 @@ module Scss
                         str << "<%= link_to '" 
                         str << links.shift
                         str << "', " 
-                        str << links.shift 
+                        # str << links.shift 
                         str << " %>"
                         str << "  </li> | \n"
                       end
-                        str << links.shift
         str << "</ul>"
                     
       end
