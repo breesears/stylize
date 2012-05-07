@@ -16,10 +16,6 @@ module Scss
         f_name.underscore
       end 
       
-      def element
-        element_name.underscore
-      end
-      
    
     end
   end
