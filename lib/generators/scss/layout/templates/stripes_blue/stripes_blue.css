@@ -50,6 +50,10 @@ div#container {
 						font-size:          14pt;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	                    color:              #356173;
+}
+
 
 ul.navbar {
 	text-align:          center;
@@ -90,7 +94,7 @@ td, th {
 
 table {
 	border-collapse: separate;
-	border-spacing:  2px;
+	border-spacing:  0px;
 }
 
 p {
