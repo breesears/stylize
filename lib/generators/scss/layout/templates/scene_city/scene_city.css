@@ -44,6 +44,27 @@ div#navbar {
 		width:               40%;
 		height:              10%;
 		position:            absolute;
+}
+	
+ul.navbar {
+		text-align:          center;
+		margin-left:         auto;
+		margin-right:        auto;
+	   	margin-top:          -6%;
+	    padding-left:        3%;
+		width:               40%;
+		height:              10%;
+		position:            absolute;
+		list-style-type:     none;
+}
+
+li.navitem {
+	    font-weight:         bold;
+	    display:             inline;
+	    padding-right:       3%;
+	    padding-left:        3%;
+	    color:               #466c7c;
+
 	}
 
 	
