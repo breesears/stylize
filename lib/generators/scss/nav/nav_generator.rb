@@ -15,7 +15,7 @@ module Scss
       def nav_items
         str = "<ul class=\"navbar\">\n"
                       until links.empty? 
-                        str << "  <li class=\"navitem\">"
+                        str << "  | <li class=\"navitem\">"
                         str << "<%= link_to '" 
                         str << links.shift
                         str << "', " 
