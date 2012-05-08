@@ -54,6 +54,14 @@ div#navbar {
 	margin-right:          auto;
 }
 
+
+.heading {
+						color:              #000000;
+						font-weight:        bold;
+						font-size:          14pt;
+}
+
+
 th {
     font-size:             1.4em;
     text-align:            left;

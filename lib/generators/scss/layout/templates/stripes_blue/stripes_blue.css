@@ -44,6 +44,12 @@ div#container {
 	margin-right:          auto;
 }
 
+.heading {
+						color:              #356173;
+						font-weight:        bold;
+						font-size:          14pt;
+}
+
 
 ul.navbar {
 	text-align:          center;
