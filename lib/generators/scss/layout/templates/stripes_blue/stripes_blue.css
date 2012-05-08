@@ -12,8 +12,8 @@ body {
 }
 
 a:link, a:active, a:visited {
-	text-decoration:none;
-	color:#333333;
+	text-decoration:  none;
+	color:            #3c5779;
 }
 
 div {
@@ -90,25 +90,21 @@ th {
 				    text-align:            center;
 				    padding:               8px;
 				    margin:                0px;
-				    background-color:      #6b0c05;
+				    background-color:      #6192a0;
 				    color:                 white;
 				    font-weight:           normal;
 }
 
 
 td {
-					border:               1px solid #490303;
+					font-size:            1.2em;
+					border:               1px solid #6192a0;
 					padding:              6px;
 }
 
 p {
 	
 }
-
-$.datepicker.setDefaults({
-   showOn: 'both',
-   buttonImageOnly: true,
-   buttonText: 'Calendar' });
 
 
 
